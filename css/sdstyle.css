@@ -1,0 +1,18 @@
+.panel{
+	margin-left: 30px;
+   margin-right: 30px;
+}
+.panelFontsize{
+	font-size: 14px;	
+}
+
+.innerFont{
+	font-size:12px;
+}
+.space{
+	margin-top: 2px;
+}
+
+.toppadd{ 
+   padding: 5% 0;
+}
