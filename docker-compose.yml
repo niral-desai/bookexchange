@@ -26,12 +26,10 @@ services:
     working_dir: /var/www/php
     volumes:
       - ./:/var/www/php
-    depends_on:
-      mysql:
-        condition: service_healthy
   # MySQL Service
   mysql:
-    image: mysql:8
+    image: mysql:5.7
+    container_name: mysqlHost
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: bookexchange

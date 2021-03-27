@@ -231,7 +231,7 @@ $(document).pngFix( );
 
 
 			<div class="nav-divider">&nbsp;</div>
-			<a href="/bookexchange/logout.php" id="logout"><img src="images/shared/nav/nav_logout.gif" width="64" height="14" alt="" /></a>
+			<a href="/logout.php" id="logout"><img src="images/shared/nav/nav_logout.gif" width="64" height="14" alt="" /></a>
 			<div class="clear">&nbsp;</div>
 
 

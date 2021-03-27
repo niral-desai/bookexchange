@@ -1,11 +1,14 @@
 <?php
     session_start();
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
     include 'connection/connection.php';
     connectdb();
 
     $email=$_POST['email'];
     $password=$_POST['password'];
-    $sql="select user_id, password_hash,status from User where email='".$email."' or username='".$email."';";
+    $sql="select user_id, password_hash,status from user where email='".$email."' or username='".$email."';";
     $result = query($sql);
     if($result->num_rows == 0)
     {
@@ -34,7 +37,7 @@
         }
 		else if($newhash == $hash && $email='admin' && $password='admin'){
 			$_SESSION['userid']=$row['user_id'];
-            header("Location: /bookexchange/Admin/index.php");
+            header("Location: /Admin/index.php");
 		}
         else
             echo '<?php include "header.php";?><h3>Wrong password.</h3><?php include "footer.php";>';

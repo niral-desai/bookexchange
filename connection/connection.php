@@ -4,8 +4,7 @@ $db =null;
 function connectdb()
 {
 	global $db;
-	 $db = new mysqli('localhost', 'root', 'root', 'bookexchange');
-
+	 $db = new mysqli('mysqlHost', 'root', 'root', 'bookexchange');
 	 if (!$db) {
     	error_log("Connection failed: " . mysqli_connect_error());
     	die();
