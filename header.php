@@ -76,7 +76,7 @@ $(function() {
                   $.get('wishlist_action.php',{action:'remove',id:item_id}).done(function(){
                     console.log(item_id);
                     $('#'+item_id).find('img').attr('src','images/wish.png');
-                    $('#'+item_id).get(0).lastChild.nodeValue = 'Add to Wishlist';
+                    $('#'+item_id).get(0).lastChild.nodeValue = 'Add to wishlist';
                     $('#'+item_id).attr('data-wish','not added');
                   });
                 }
@@ -84,7 +84,7 @@ $(function() {
                 {
                   $.get('wishlist_action.php',{action:'add',id:item_id}).done(function(){
                     $('#'+item_id).find('img').attr('src','images/wish2.png');
-                    $('#'+item_id).get(0).lastChild.nodeValue = 'Remove from Wishlist';
+                    $('#'+item_id).get(0).lastChild.nodeValue = 'Remove from wishlist';
                     $('#'+item_id).attr('data-wish','added');
                   });
                 }
@@ -140,9 +140,9 @@ $(function() {
                                 else
                                 {
                                   echo '<li><a href="user_profile.php">Profile</a></li>';
-                                  echo '<li><a href="wishlist.php">Wishlist</a></li>';
+                                  echo '<li><a href="wishlist.php">wishlist</a></li>';
                                   echo '<li><a href="listbooks.php">my posts</a></li>';
-                                  echo '<li><a href="postbook.php">Post Item</a></li>';
+                                  echo '<li><a href="postbook.php">Post item</a></li>';
                                   echo '<li><a href="logout.php">Log out</a></li>';
                                 }
                               ?>

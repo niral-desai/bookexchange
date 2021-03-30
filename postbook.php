@@ -40,12 +40,12 @@ session_start();
                                             </select>
                                         </div>
                                         <div class="top">
-                                            <span>Category</span>
+                                            <span>category</span>
                                             <select name="category" id="category" required>
                                             <?php
                                                 include 'connection/connection.php';
                                                 connectdb();
-                                                $sql="SELECT category_name from Category;";
+                                                $sql="SELECT category_name from category;";
                                                 $res=query($sql);
                                                 while($row=$res->fetch_assoc())
                                                 {
@@ -59,7 +59,7 @@ session_start();
                                             <span>Type</span>
                                             <select name="type" id="type" required>
                                             <?php
-                                                $sql="SELECT type_name from ItemType;";
+                                                $sql="SELECT type_name from itemtype;";
                                                 $res=query($sql);
                                                 while($row=$res->fetch_assoc())
                                                 {

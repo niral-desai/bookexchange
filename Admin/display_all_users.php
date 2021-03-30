@@ -12,7 +12,7 @@
 
     include 'connection.php';
     connectdb();
-	$sql = "select firstname, lastname, email, username, dob , status from User;";
+	$sql = "select firstname, lastname, email, username, dob , status from user;";
 	$user_list = array();
 	$result = query($sql);
     }

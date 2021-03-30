@@ -12,7 +12,7 @@
 
     include 'connection.php';
     connectdb();
-	$sql = "select user_id,firstname, lastname, email, username, dob  from User where status = 'active';";
+	$sql = "select user_id,firstname, lastname, email, username, dob  from user where status = 'active';";
 	$user_list = array();
 	$result = query($sql);
 

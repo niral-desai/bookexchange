@@ -7,7 +7,7 @@
             <?php
                 include 'connection/connection.php';
                 connectdb();
-                $sql="select * from Item, Wishlist where Item.item_id=Wishlist.item_id and Item.post_status='available' and Wishlist.user_id=".$_SESSION['userid'];
+                $sql="select * from item, wishlist where item.item_id=wishlist.item_id and item.post_status='available' and wishlist.user_id=".$_SESSION['userid'];
                 $res=query($sql);
                     $cnt=0;
                     if($res->num_rows==0)
@@ -37,7 +37,7 @@
                         <h3><a href="single.php?id='.$row['item_id'].'">'.$row['title'].'</a></h3>
                         <p>'.$row['author'].'</p>
                         <span class="actual">$'.$row['price'].'</span><br>
-                        <ul class="add-to-links"><li><a href="#" class="wishlist" id="'.$row['item_id'].'" data-wish="added"><img src="images/wish2.png"  alt=""/>Remove from Wishlist</a></li><div class="clear"> </div></ul>
+                        <ul class="add-to-links"><li><a href="#" class="wishlist" id="'.$row['item_id'].'" data-wish="added"><img src="images/wish2.png"  alt=""/>Remove from wishlist</a></li><div class="clear"> </div></ul>
                     </div>
                 </a></div>';
                     if($cnt%4==3)

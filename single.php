@@ -10,7 +10,7 @@
 					<?php
 						include 'connection/connection.php';
 						connectdb();
-						$sql="select * from Item where item_id=".$_GET['id'];
+						$sql="select * from item where item_id=".$_GET['id'];
 						$res=query($sql);
 						$row=$res->fetch_assoc();
 						echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['image'] ).'" height="293" width="182" alt=""/>';
@@ -21,7 +21,7 @@
 				        	<h3><?=$row['title'];?></h3>
 				        	<p class="m_10"><?=$row['author'];?></p>
 				        	<ul class="options">
-								<h4 class="m_12">Item Condition</h4>
+								<h4 class="m_12">item Condition</h4>
 								<li><a href="#"><?=$row['item_condition'];?></a></li>
 							</ul>
 				        	<ul class="options">
@@ -30,10 +30,10 @@
 								<div class="clear"> </div>
 							</ul>
 							<ul class="options">
-								<h4 class="m_12">Category</h4>
+								<h4 class="m_12">category</h4>
 								<li><a href="#"><?php
 									$category_id=$row['category_id'];
-									$sql="select category_name from Category where category_id=".$category_id;
+									$sql="select category_name from category where category_id=".$category_id;
 									$res=query($sql);
 									$row2=$res->fetch_assoc();
 									echo $row2['category_name'];
@@ -69,15 +69,15 @@
 					<?php
 					if(isset($_SESSION['userid']))
                         {
-                            $sql='select * from Wishlist where user_id='.$_SESSION['userid'].' and item_id='.$row['item_id'];
+                            $sql='select * from wishlist where user_id='.$_SESSION['userid'].' and item_id='.$row['item_id'];
                             $res2=query($sql);
                             if($res2->num_rows>0)
                             {
-                                echo '<ul class="add-to-links"><li><a href="#" class="wishlist" id="'.$row['item_id'].'" data-wish="added"><img src="images/wish2.png"  alt=""/>Remove from Wishlist</a></li><div class="clear"> </div></ul>';
+                                echo '<ul class="add-to-links"><li><a href="#" class="wishlist" id="'.$row['item_id'].'" data-wish="added"><img src="images/wish2.png"  alt=""/>Remove from wishlist</a></li><div class="clear"> </div></ul>';
                             }
                             else
                             {
-                                echo '<ul class="add-to-links"><li><a href="#" class="wishlist" id="'.$row['item_id'].'" data-wish="not added"><img src="images/wish.png" alt=""/>Add to Wishlist</a></li><div class="clear"> </div></ul>';
+                                echo '<ul class="add-to-links"><li><a href="#" class="wishlist" id="'.$row['item_id'].'" data-wish="not added"><img src="images/wish.png" alt=""/>Add to wishlist</a></li><div class="clear"> </div></ul>';
                             }
                         }
 				   ?>
@@ -92,7 +92,7 @@
 			   	<h4>Contact</h4>
 			   	<ul class="options">
 								<?php
-									$sql="select firstname,lastname, contact_no,address1,address2,User.zipcode,city_name,state_name from User, Zipcode,City,State where User.zipcode=Zipcode.zipcode and Zipcode.city_id=City.city_id and City.state_id=State.state_id and user_id=".$row['user_id'];
+									$sql="select firstname,lastname, contact_no,address1,address2,user.zipcode,city_name,state_name from user, zipcode,city,state where user.zipcode=zipcode.zipcode and zipcode.city_id=city.city_id and city.state_id=state.state_id and user_id=".$row['user_id'];
 									$res=query($sql);
 									$row2=$res->fetch_assoc();
 									echo '<li><h5>'.$row2['firstname'].' '.$row2['lastname'].'</h5></li><br/>';
@@ -103,12 +103,12 @@
 							</ul>
 			</div>
 			<?php
-					$sql="select * from Item where post_status='available' and category_id=".$row['category_id'];
+					$sql="select * from item where post_status='available' and category_id=".$row['category_id'];
 					$res=query($sql);
 					if($res->num_rows>0)
 					{
 						echo '<div class="row">
-				<h4 class="m_11">Related Products in the same Category</h4>';
+				<h4 class="m_11">Related Products in the same category</h4>';
 						$cnt=0;
 						while($row2=$res->fetch_assoc())
 						{
@@ -136,15 +136,15 @@
 
                         if(isset($_SESSION['userid']))
                         {
-                            $sql='select * from Wishlist where user_id='.$_SESSION['userid'].' and item_id='.$row2['item_id'];
+                            $sql='select * from wishlist where user_id='.$_SESSION['userid'].' and item_id='.$row2['item_id'];
                             $res2=query($sql);
                             if($res2->num_row2s>0)
                             {
-                                echo '<ul class="add-to-links"><li><a href="#" class="wishlist" id="'.$row2['item_id'].'" data-wish="added"><img src="images/wish2.png" alt=""/>Remove from Wishlist</a></li><div class="clear"> </div></ul>';
+                                echo '<ul class="add-to-links"><li><a href="#" class="wishlist" id="'.$row2['item_id'].'" data-wish="added"><img src="images/wish2.png" alt=""/>Remove from wishlist</a></li><div class="clear"> </div></ul>';
                             }
                             else
                             {
-                                echo '<ul class="add-to-links"><li><a href="#" class="wishlist" id="'.$row2['item_id'].'" data-wish="not added"><img src="images/wish.png" alt=""/>Add to Wishlist</a></li><div class="clear"> </div></ul>';
+                                echo '<ul class="add-to-links"><li><a href="#" class="wishlist" id="'.$row2['item_id'].'" data-wish="not added"><img src="images/wish.png" alt=""/>Add to wishlist</a></li><div class="clear"> </div></ul>';
                             }
                         }
 

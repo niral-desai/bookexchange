@@ -4,7 +4,7 @@
 
     include 'connection.php';
     connectdb();
-	$sql = "select firstname, lastname, email, username, dob  from User;";
+	$sql = "select firstname, lastname, email, username, dob  from user;";
 	$user_list = array();
 	$result = query($sql);
 	

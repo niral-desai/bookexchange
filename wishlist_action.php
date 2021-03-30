@@ -13,12 +13,12 @@
         $itemid=$_GET['id'];
         if($action=='add')
         {
-            $sql='insert into Wishlist(item_id,user_id) values('.$itemid.','.$userid.');';
+            $sql='insert into wishlist(item_id,user_id) values('.$itemid.','.$userid.');';
             query($sql);
         }
         else
         {
-            $sql='delete from Wishlist where item_id='.$itemid.' and user_id='.$userid.';';
+            $sql='delete from wishlist where item_id='.$itemid.' and user_id='.$userid.';';
             query($sql);
         }
     }

@@ -12,7 +12,7 @@ session_start();
 				 <div class="login-page">
 					<h4 class="title">New Customers</h4>
 					<p>The only place to buy, sell, exchange or donate books 
-						within your Institute/City.</p>
+						within your Institute/city.</p>
 						<p>Create an account to see a new world of change.</p>
 					<div class="button1">
 					   <a href="register.php"><input type="submit" name="Submit" value="Create an Account"></a>

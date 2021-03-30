@@ -54,19 +54,19 @@
 											<input type="text" name="address2">
 										</div>
 										<div class="top">
-											<span>Zipcode<label>*</label></span>
+											<span>zipcode<label>*</label></span>
 											<input type="text" pattern="(\d{5}?)" placeholder="Enter 5 digit zipcode" name="zipcode" id="zipcode" required>
 										</div>
 										<div class="top">
-											<span>City<label>*</label></span>
+											<span>city<label>*</label></span>
 											<input type="text" id="city" required>
 										</div>
 										<div class="top">
-											<span>State<label>*</label></span>
+											<span>state<label>*</label></span>
 											<input type="text" id="state" required>
 										</div>
 										<div class="top">
-											<span>Country<label>*</label></span>
+											<span>country<label>*</label></span>
 											<input type="text" id="country" required>
 										</div>
 										<div class="top">

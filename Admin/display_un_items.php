@@ -62,7 +62,7 @@
 					
 					<th class="table-header-repeat line-left minwidth-1"><a href="">Username</a>	</th>
 					<th class="table-header-repeat line-left minwidth-1"><a href="">Type</a></th>
-					<th class="table-header-repeat line-left"><a href="">Category</a></th>
+					<th class="table-header-repeat line-left"><a href="">category</a></th>
 					<th class="table-header-repeat line-left"><a href="">Title</a></th>
 					<th class="table-header-repeat line-left"><a href="">Author</a></th>
 					<th class="table-header-options line-left"><a href="">Descrption</a></th>

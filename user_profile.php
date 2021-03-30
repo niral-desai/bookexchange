@@ -9,7 +9,7 @@ session_start();
     include 'header.php';
 	include 'connection/connection.php';
     connectdb();
-    $sql = "select * from User where user_id='".$_SESSION['userid']."' ;";
+    $sql = "select * from user where user_id='".$_SESSION['userid']."' ;";
     $result = query($sql);
     $row = $result->fetch_assoc();
     $fname=$row['firstname'];
@@ -74,8 +74,8 @@ session_start();
                                             <text id="address2" class="edit"> <?php echo $row['address2'] ?></text>
                                         </div>
                                          <div class="top">
-                                            <span>City</span>
-                                            <?php $sql="select city_name from city where city_id =(select city_id from Zipcode where zipcode='".$row['zipcode']."');";
+                                            <span>city</span>
+                                            <?php $sql="select city_name from city where city_id =(select city_id from zipcode where zipcode='".$row['zipcode']."');";
                                             $result1 = query($sql);
     										                    $row1 = $result1->fetch_assoc();
                                              ?>
@@ -84,7 +84,7 @@ session_start();
                                         </div>
 
                                            <div class="top">
-                                            <span>Zipcode</span>
+                                            <span>zipcode</span>
                                             <text id="zipcode" class="edit"> <?php echo $row['zipcode'] ?></text>
                                         </div>
                                         <div class="clear"> </div>

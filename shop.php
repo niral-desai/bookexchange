@@ -20,7 +20,7 @@
                 <?php
                     include 'connection/connection.php';
                     connectdb();
-                    $sql="select type_name from ItemType";
+                    $sql="select type_name from itemtype";
                     $res=query($sql);
                     while($row=$res->fetch_assoc())
                     {
@@ -46,7 +46,7 @@
                 <p class="panelFontsize">Filter by Catagory:</p>
                 <br/>
                 <?php
-                    $sql="select category_name from Category";
+                    $sql="select category_name from category";
                     $res=query($sql);
                     while($row=$res->fetch_assoc())
                     {
@@ -87,7 +87,7 @@
       <div class="shop_top col-md-8">
         <div class="container" id="main-container">
             <?php
-                $sql="select * from Item,Category,User,Zipcode,City,ItemType where post_status='available' and Item.type_id=ItemType.type_id and Item.category_id=Category.category_id and Item.user_id=User.user_id and User.zipcode=Zipcode.zipcode and Zipcode.city_id=City.city_id";
+                $sql="select * from item,category,user,zipcode,city,itemtype where post_status='available' and item.type_id=itemtype.type_id and item.category_id=category.category_id and item.user_id=user.user_id and user.zipcode=zipcode.zipcode and zipcode.city_id=city.city_id";
                 $res=query($sql);
                     $cnt=0;
                     while($row=$res->fetch_assoc())
@@ -116,15 +116,15 @@
 
                         if(isset($_SESSION['userid']))
                         {
-                            $sql='select * from Wishlist where user_id='.$_SESSION['userid'].' and item_id='.$row['item_id'];
+                            $sql='select * from wishlist where user_id='.$_SESSION['userid'].' and item_id='.$row['item_id'];
                             $res2=query($sql);
                             if($res2->num_rows>0)
                             {
-                                echo '<ul class="add-to-links"><li><a href="#" class="wishlist" id="'.$row['item_id'].'" data-wish="added"><img src="images/wish2.png" alt=""/>Remove from Wishlist</a></li><div class="clear"> </div></ul>';
+                                echo '<ul class="add-to-links"><li><a href="#" class="wishlist" id="'.$row['item_id'].'" data-wish="added"><img src="images/wish2.png" alt=""/>Remove from wishlist</a></li><div class="clear"> </div></ul>';
                             }
                             else
                             {
-                                echo '<ul class="add-to-links"><li><a href="#" class="wishlist" id="'.$row['item_id'].'" data-wish="not added"><img src="images/wish.png" alt=""/>Add to Wishlist</a></li><div class="clear"> </div></ul>';
+                                echo '<ul class="add-to-links"><li><a href="#" class="wishlist" id="'.$row['item_id'].'" data-wish="not added"><img src="images/wish.png" alt=""/>Add to wishlist</a></li><div class="clear"> </div></ul>';
                             }
                         }
 

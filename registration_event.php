@@ -25,7 +25,7 @@
 
     $password_hash=md5($password);
 
-    $sql = "Insert into User(firstname,lastname,email,username,gender,dob,password_hash,address1,address2,zipcode,contact_no,status) values ('".$firstname."','".$lastname."','".$email."','".$username."','".$gender."','".$newDate."','".$password_hash."','".$address1."','".$address2."','".$zipcode."','".$contact."','under_review');";
+    $sql = "Insert into user(firstname,lastname,email,username,gender,dob,password_hash,address1,address2,zipcode,contact_no,status) values ('".$firstname."','".$lastname."','".$email."','".$username."','".$gender."','".$newDate."','".$password_hash."','".$address1."','".$address2."','".$zipcode."','".$contact."','under_review');";
 
     $res=query($sql);
     header("Location: login.php");

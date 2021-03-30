@@ -7,7 +7,7 @@ include 'header.php';
         <?php
             include 'connection/connection.php';
             connectdb();
-            $sql="select * from Item where post_status="available" user_id=".$_SESSION['userid'];
+            $sql="select * from item where post_status='available' AND user_id=".$_SESSION['userid'];
             $res=query($sql);
             $cnt=0;
             while($row=$res->fetch_assoc())
