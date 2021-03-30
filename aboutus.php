@@ -10,16 +10,11 @@
 	      			 <div class="register-top-grid">
                                         <h3>ABOUT US</h3><hr style="margin-top:1px;margin-bottom:20px">
 										<p>
-										A bunch of graduate students striving to do something in such a way that
-										can be really helpful to someone and that can alter the life as we know it.
-										Online Book Exchange is our first step to do something for students like us.
-										In case of text books, every time when any student wants to buy a book their first
-										thought would be why not first look at library?
-										if not, Second thought would be why shouldn't we opt for 'used books
-										if there is same content in new book, and due to lack of availability of used books,
-										we end up buying new books, making it heavy on our pocket.
-										Readers who love to read novels and magazines, they have to pay for private library subscriptions
-										or they have to buy new book which is very costly.
+										Nowadays, with the rise of digital technology physical books are now being available online. But the fun of reading comes only when you own it and it becomes a part of yours. We decided to make the sharing of books among bibliophiles very possible and convenient. “BOOK BOX” as the name suggests a collection of book readers and owners in a box.
+
+										Our motive is to help the propensity for perusing and spread the word for all to enter the enchanted universe of books. As books constrain you to back off and see the world through the eyes of your brain.
+
+										
 										</p>
 
 										<p>
@@ -28,6 +23,7 @@
 
 										<p>
 										We thought that how can we make things easy for students.
+										As new books are costly and full price for a book that we are going to use for a couple of months is not an ideal deal.
 										So, We provide a platform for students to sell their used books online at
 										reasonable prices rather then getting lump sum amount when they return their book to any shop,
 										similarly a particular user can buy a book at reasonable price from some different user in his/her city/institute.
