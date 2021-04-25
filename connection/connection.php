@@ -4,7 +4,7 @@ $db =null;
 function connectdb()
 {
 	global $db;
-	 $db = new mysqli('mysqlHost', 'root', 'root', 'bookexchange');
+	 $db = new mysqli('database-1.c23saagmlxov.us-east-1.rds.amazonaws.com', 'bookexchange', 'bookexchange', 'bookexchange-aws');
 	 if (!$db) {
     	error_log("Connection failed: " . mysqli_connect_error());
     	die();
