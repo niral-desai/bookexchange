@@ -55,7 +55,7 @@
 										</div>
 										<div class="top">
 											<span>zipcode<label>*</label></span>
-											<input type="text" pattern="(\d{6}?)" placeholder="Enter 5 digit zipcode" name="zipcode" id="zipcode" required>
+											<input type="text" pattern="(\d{6}?)" placeholder="Enter 6 digit zipcode" name="zipcode" id="zipcode" required>
 										</div>
 										<div class="top">
 											<span>city<label>*</label></span>
