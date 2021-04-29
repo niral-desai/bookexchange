@@ -77,3 +77,8 @@ CREATE TABLE IF NOT EXISTS `zipcode` (
   UNIQUE KEY `zipcode` (`zipcode`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+CREATE TABLE IF NOT EXISTS `recommendations` (
+  `item_id` int NOT NULL,
+  `recommendation` text NOT NULL,
+  PRIMARY KEY (`item_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1;

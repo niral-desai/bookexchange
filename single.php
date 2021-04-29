@@ -103,19 +103,22 @@
 							</ul>
 			</div>
 			<?php
-					$sql="select * from item where post_status='available' and category_id=".$row['category_id'];
+					$sql="select * from recommendations where item_id=".$row['item_id'];
 					$res=query($sql);
 					if($res->num_rows>0)
 					{
 						echo '<div class="row">
-				<h4 class="m_11">Related Products in the same category</h4>';
+				<h4 class="m_11">Similar Items You May Like</h4>';
 						$cnt=0;
-						while($row2=$res->fetch_assoc())
+						$recRow = $res->fetch_assoc();
+						$items = explode(",", $recRow['recommendation']);
+						foreach($items as $i)
 						{
-							if($row2['item_id']==$row['item_id'])
-								continue;
-                            if($cnt>3)
+							if ($cnt > 3)
 								break;
+							$sql="select * from item where item_id=".$i;
+							$res=query($sql);
+							$row2 = $res->fetch_assoc();
                         echo '<div class="col-md-3 shop_box" data-city="'.$row2['city_name'].'" data-type="'.$row2['type_name'].'" data-category="'.$row2['category_name'].'" data-for="'.$row2['availability_type'].'"><a href="single.php?id='.$row2['item_id'].'"><div style="height:300px;overflow:hidden;">
                     <img src="data:image/jpeg;base64,'.base64_encode( $row2['image'] ).'" style="width:100%" alt=""/></div>
                     <span class="new-box">';
