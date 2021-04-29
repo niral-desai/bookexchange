@@ -1,0 +1,2 @@
+#run python script every minutes
+*/5 * * * * /opt/conda/bin/python /BookExchangeRec/Recommendation.py > /proc/1/fd/1 2>/proc/1/fd/2

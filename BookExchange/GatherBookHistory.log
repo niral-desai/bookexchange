@@ -1,0 +1,85 @@
+INFO:04/25/2021 04:16:03 PM:Gather Book History Started for:
+ERROR:04/25/2021 04:21:53 PM:Error spawning a new process for user:7
+ERROR:04/25/2021 04:21:53 PM:Process Spawning7:NameError("name 'metdata' is not defined")
+INFO:04/25/2021 04:25:50 PM:Gather Book History Started for:
+INFO:04/25/2021 04:50:43 PM:Gather Book History Started for:
+INFO:04/25/2021 04:51:33 PM:Recommendation started for User:7
+ERROR:04/25/2021 04:53:08 PM:Error in getting Recommendations for user:7
+ERROR:04/25/2021 04:53:08 PM:7:ValueError('malformed node or string: <_ast.Name object at 0x10facd2e0>')
+INFO:04/25/2021 04:53:16 PM:Gather Book History Started for:
+INFO:04/25/2021 04:53:21 PM:Recommendation started for User:7
+ERROR:04/25/2021 04:54:00 PM:Error in getting Recommendations for user:7
+ERROR:04/25/2021 04:54:00 PM:7:ValueError('malformed node or string: <_ast.Name object at 0x115d7a5e0>')
+INFO:04/25/2021 04:57:22 PM:Gather Book History Started for:
+INFO:04/25/2021 04:57:28 PM:Recommendation started for User:7
+ERROR:04/25/2021 04:57:55 PM:Error in getting Recommendations for user:7
+ERROR:04/25/2021 04:57:55 PM:7:ValueError('malformed node or string: <_ast.Name object at 0x11b484670>')
+INFO:04/25/2021 04:58:54 PM:Gather Book History Started for:
+INFO:04/25/2021 04:59:00 PM:Recommendation started for User:7
+ERROR:04/25/2021 04:59:11 PM:Error in getting Recommendations for user:7
+ERROR:04/25/2021 04:59:35 PM:7:SyntaxError('unexpected EOF while parsing', ('<unknown>', 1, 9, 'Mystery Thriller'))
+INFO:04/25/2021 05:00:45 PM:Gather Book History Started for:
+INFO:04/25/2021 05:00:52 PM:Recommendation started for User:7
+ERROR:04/25/2021 05:02:04 PM:Error in getting Recommendations for user:7
+ERROR:04/25/2021 05:02:04 PM:7:SyntaxError('unexpected EOF while parsing', ('<unknown>', 1, 9, 'Mystery Thriller'))
+INFO:04/25/2021 05:10:47 PM:Gather Book History Started for:
+INFO:04/25/2021 05:10:54 PM:Recommendation started for User:7
+ERROR:04/25/2021 05:10:59 PM:Error in getting Recommendations for user:7
+ERROR:04/25/2021 05:10:59 PM:7:AttributeError("'str' object has no attribute 'x'")
+INFO:04/25/2021 05:11:19 PM:Gather Book History Started for:
+INFO:04/25/2021 05:11:25 PM:Recommendation started for User:7
+INFO:04/25/2021 05:14:09 PM:Gather Book History Started for:
+INFO:04/25/2021 05:14:14 PM:Recommendation started for User:7
+ERROR:04/25/2021 05:15:16 PM:Error in getting Recommendations for user:7
+ERROR:04/25/2021 05:15:16 PM:7:ModuleNotFoundError("No module named 'sklearn'")
+INFO:04/26/2021 10:05:30 PM:Recommendation started for User:
+ERROR:04/26/2021 10:05:59 PM:Error in getting Recommendations
+INFO:04/26/2021 10:06:45 PM:Recommendation started for User:
+ERROR:04/26/2021 10:08:11 PM:Error in getting Recommendations
+INFO:04/26/2021 10:10:59 PM:Recommendation started for User:
+INFO:04/26/2021 10:12:19 PM:Recommendation started for User:
+ERROR:04/26/2021 10:12:30 PM:Error in getting Recommendationscan only join an iterable
+INFO:04/26/2021 10:15:21 PM:Recommendation started for User:
+ERROR:04/26/2021 10:15:39 PM:Error in getting Recommendationscan only join an iterable
+INFO:04/26/2021 10:18:24 PM:Recommendation started for User:
+INFO:04/26/2021 10:24:47 PM:Recommendation started for User:
+INFO:04/26/2021 10:31:06 PM:Recommendation started for User:
+ERROR:04/26/2021 10:31:23 PM:Error in getting RecommendationsMust have equal len keys and value when setting with an iterable
+INFO:04/26/2021 10:33:59 PM:Recommendation started for User:
+INFO:04/26/2021 10:34:37 PM:Recommendation started for User:
+INFO:04/26/2021 10:37:06 PM:Recommendation started for User:
+INFO:04/26/2021 10:38:23 PM:Recommendation started for User:
+INFO:04/26/2021 10:47:43 PM:Recommendation started for User:
+INFO:04/26/2021 10:49:01 PM:Recommendation started for User:
+ERROR:04/26/2021 10:49:14 PM:Error in getting Recommendationscan only join an iterable
+INFO:04/26/2021 10:54:05 PM:Recommendation started for User:
+INFO:04/26/2021 10:54:41 PM:Recommendation started for User:
+INFO:04/26/2021 10:55:55 PM:Recommendation started for User:
+ERROR:04/26/2021 10:56:31 PM:Error in getting Recommendationscan only concatenate str (not "list") to str
+INFO:04/26/2021 10:59:18 PM:Recommendation started for User:
+ERROR:04/26/2021 10:59:41 PM:Error in getting Recommendationscan only concatenate str (not "list") to str
+INFO:04/26/2021 11:00:51 PM:Recommendation started for User:
+ERROR:04/26/2021 11:01:01 PM:Error in getting Recommendationscan only concatenate str (not "list") to str
+INFO:04/26/2021 11:01:55 PM:Recommendation started for User:
+INFO:04/26/2021 11:04:21 PM:Recommendation started for User:
+INFO:04/26/2021 11:05:50 PM:Recommendation started for User:
+INFO:04/26/2021 11:08:23 PM:Recommendation started for User:
+INFO:04/26/2021 11:11:03 PM:Recommendation started for User:
+INFO:04/28/2021 09:55:12 PM:Recommendation started
+INFO:04/28/2021 09:57:04 PM:Recommendation started
+INFO:04/28/2021 09:57:43 PM:Recommendation started
+INFO:04/28/2021 09:59:05 PM:Recommendation started
+ERROR:04/28/2021 09:59:41 PM:Error while writing recommendation to the table
+INFO:04/28/2021 10:00:45 PM:Recommendation started
+INFO:04/28/2021 10:04:50 PM:Recommendation started
+INFO:04/28/2021 10:06:07 PM:Recommendation Ended
+INFO:04/28/2021 10:06:38 PM:Recommendation started
+INFO:04/28/2021 10:07:10 PM:Recommendation Ended
+INFO:04/28/2021 10:09:08 PM:Recommendation started
+INFO:04/28/2021 10:09:34 PM:Recommendation Ended
+INFO:04/28/2021 10:10:25 PM:Recommendation started
+INFO:04/28/2021 10:10:57 PM:Recommendation Ended
+INFO:04/28/2021 10:11:28 PM:Recommendation started
+INFO:04/28/2021 10:11:59 PM:Recommendation Ended
+INFO:04/29/2021 05:15:33 AM:Recommendation started
+ERROR:04/29/2021 05:15:33 AM:Error in getting RecommendationsModuleNotFoundError("No module named 'sklearn'")

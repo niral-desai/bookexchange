@@ -1,0 +1,13 @@
+mysql:
+  HOST: database-1.c23saagmlxov.us-east-1.rds.amazonaws.com
+ # HOST: 127.0.0.1
+  USER: bookexchange
+  #USER: root
+  PASSWORD: bookexchange
+  #PASSWORD: root
+  DATABASE: bookexchange-aws
+  CHARSET : ISO-8859-1
+  ENCODING: ISO-8859-1
+
+debug:
+  FLAG : true
